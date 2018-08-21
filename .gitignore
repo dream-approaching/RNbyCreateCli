@@ -1,5 +1,12 @@
 
-# Created by https://www.gitignore.io/api/reactnative
+# Created by https://www.gitignore.io/api/code,reactnative
+
+### Code ###
+# Visual Studio Code - https://code.visualstudio.com/
+.settings/
+.vscode/
+tsconfig.json
+jsconfig.json
 
 ### ReactNative ###
 # React Native Stack Base
@@ -237,4 +244,4 @@ DerivedData/
 !default.perspectivev3
 
 
-# End of https://www.gitignore.io/api/reactnative
+# End of https://www.gitignore.io/api/code,reactnative
