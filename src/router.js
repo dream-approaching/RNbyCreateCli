@@ -1,14 +1,21 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
+import HomeScreen from './pages/home';
+import DetailScreen from './pages/home/detail';
+import MineScreen from './pages/mine';
+import SettingScreen from './pages/mine/setting';
 
-const styles = {
-  container: {
-    marginTop: 20
-  }
-};
+const HomeStack = createStackNavigator({
+  Home: HomeScreen,
+  Detail: DetailScreen
+});
 
-export default class extends React.Component {
-  render() {
-    return <Text style={styles.container}>123</Text>;
-  }
-}
+const MineStack = createStackNavigator({
+  Mine: MineScreen,
+  Setting: SettingScreen
+});
+
+export default createBottomTabNavigator({
+  Home: HomeStack,
+  Mine: MineStack
+});
