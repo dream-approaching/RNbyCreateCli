@@ -2,9 +2,7 @@ import React from 'react';
 import { Text } from 'react-native';
 
 const styles = {
-  container: {
-    marginTop: 20
-  }
+  container: {}
 };
 
 export default class extends React.Component {
